@@ -1,0 +1,35 @@
+actor User
+participant Browser
+participant Server
+
+User -> Browser: Input the URL https://studies.cs.helsinki.fi/exampleapp/spa
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+Server --> Browser: HTML-code
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+Server --> Browser: main.css
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+Server --> Browser: spa.js
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+note right of Browser
+    Browser starts executing js-code that
+    requests JSON data from Server.
+end note
+
+Server --> Browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+Browser -> Browser: redrawNotes()
+
+note right of Browser
+    Browser executes the event handler
+    that renders notes to display
+end note
+
+Browser --> User: List of notes in screen
