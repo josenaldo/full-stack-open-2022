@@ -2,7 +2,7 @@ actor User
 participant Browser
 participant Server
 
-User -> Browser: Input new note and click send
+User -> Browser: Input new note and click Save
 
 Browser -> Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 

@@ -1,0 +1,24 @@
+actor User
+participant Browser
+participant Server
+
+User -> Browser: Input new note and click Save
+
+Browser -> Browser: create new note
+
+Browser -> Browser: notes.push(note)
+
+Browser -> Browser: redrawNotes()
+
+Browser -> Browser: sendToServer(note)
+
+Browser -> Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note right of Browser
+    request body:
+    {content: "Teste", date: "2022-10-21T20:19:58.559Z"}
+end note
+
+Server --> Browser: 201
+
+Browser --> User: List of notes in screen
