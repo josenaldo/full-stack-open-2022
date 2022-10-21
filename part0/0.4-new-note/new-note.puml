@@ -1,0 +1,65 @@
+actor User
+participant Browser
+participant Server
+
+User -> Browser: Input new note and click send
+
+Browser -> Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note right of Browser
+    request body:
+    {note: test}
+end note
+
+Server --> Browser: 302
+
+note left of Server
+    Server reponds with
+    response header
+    {location:/exampleapp/notes}
+end note
+
+Browser -> Browser: Redirect to /exampleapp/notes
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+note right of Browser
+    Browser redirected to /notes
+end note
+
+Server --> Browser: HTML-code
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+Server --> Browser: main.css
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+Server --> Browser: main.js
+
+Browser -> Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+note right of Browser
+    Browser starts executing js-code that
+    requests JSON data from Server.
+end note
+
+Server --> Browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note left of Server
+    JSON now has
+    {
+        "content": "Teste",
+        "date": "2022-10-21T18:45:21.889Z"
+    }
+    as last item.
+end note
+
+Browser -> Browser: Render notes list
+
+note right of Browser
+    Browser executes the event handler
+    that renders notes to display
+end note
+
+Browser --> User: List of notes in screen
