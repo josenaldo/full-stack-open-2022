@@ -8,12 +8,12 @@
 
 - [Course](https://fullstackopen.com/en/about)
 - [Submissions](https://studies.cs.helsinki.fi/stats/courses/fullstackopen/submissions)
-- [Exercises](/part0/README.md)
 
 ### Part 0 - Fundamentals of Web apps
 
 - [Content](https://fullstackopen.com/en/part0)
 - [Repository](https://github.com/mluukkai/example_app)
+- [Exercises](/part0/README.md)
 
 ### Part 1 - Introduction to React
 
