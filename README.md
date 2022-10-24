@@ -18,6 +18,8 @@
 ### Part 1 - Introduction to React
 
 - [Content](https://fullstackopen.com/en/part1)
+- Apps
+  - [Part 1a](part1/apps/part1/)
 
 ### Part 2 - Communicating with server
 
