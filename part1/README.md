@@ -14,3 +14,6 @@
   - 1.9 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.9>
   - 1.10 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.10>
   - 1.11 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.11>
+
+- Anecdotes
+  - 1.12 - <
