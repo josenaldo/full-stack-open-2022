@@ -22,4 +22,15 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    border: none;
+    background-color: #52565f;
+    color: white;
+}
+
+button:hover {
+    background-color: #80858f;
+}
+
+button:active {
+    background-color: #52565f;
 }

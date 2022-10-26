@@ -16,4 +16,10 @@
   - 1.11.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.11.1>
 
 - Anecdotes
-  - 1.12 - <
+  - 1.12 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.12>
+  - 1.13 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.13>
+
+## Notes
+
+- Palette used in exercises: <https://gka.github.io/palettes/#/3|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
+
