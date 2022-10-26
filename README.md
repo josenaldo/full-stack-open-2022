@@ -18,8 +18,7 @@
 ### Part 1 - Introduction to React
 
 - [Content](https://fullstackopen.com/en/part1)
-- Apps
-  - [Part 1a](part1/apps/part1/)
+- [Exercises](/part1/README.md)
 
 ### Part 2 - Communicating with server
 
@@ -68,6 +67,13 @@
 ### Part 13 - Using relational databases
 
 - [Content](https://fullstackopen.com/en/part13)
+
+### Extras
+
+This area contains some extra projects that are not part of this course but are related to it.
+
+- [this](/extras/this/) - A simple example of how `this` works in JavaScript.
+- [function-return-function](/extras/function-return-function/) - A simple example of how to implement a per-object event handler, using a function that returns another function.
 
 ## Author
 
