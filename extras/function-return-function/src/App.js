@@ -10,12 +10,10 @@ function App() {
         { name: 'Jane', age: 50 },
     ]
 
-    const hello = (person) => {
-        const handler = () => {
-            setMessage('Hello ' + person.name)
-        }
-        return handler
-    }
+    const hello = (person) => () =>
+        setMessage(
+            `Hi! My name is ${person.name} and I am ${person.age} years old.`
+        )
 
     return (
         <div>
