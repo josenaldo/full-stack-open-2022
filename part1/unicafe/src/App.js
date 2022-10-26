@@ -8,7 +8,7 @@ const Button = ({ handleClick, text }) => {
     return <button onClick={handleClick}>{text}</button>
 }
 
-const Statistic = ({ text, value }) => {
+const StatisticLine = ({ text, value }) => {
     return (
         <div className="stat">
             <span>{text}</span>
@@ -26,15 +26,15 @@ const Statistics = ({ good, neutral, bad }) => {
         <>
             {all > 0 ? (
                 <div className="statistics">
-                    <Statistic text="Good" value={good} />
-                    <Statistic text="Neutral" value={neutral} />
-                    <Statistic text="Bad" value={bad} />
-                    <Statistic text="All" value={all} />
-                    <Statistic
+                    <StatisticLine text="Good" value={good} />
+                    <StatisticLine text="Neutral" value={neutral} />
+                    <StatisticLine text="Bad" value={bad} />
+                    <StatisticLine text="All" value={all} />
+                    <StatisticLine
                         text="Average"
                         value={average ? average.toFixed(2) : 0}
                     />
-                    <Statistic
+                    <StatisticLine
                         text="Positive"
                         value={`${positive ? positive.toFixed(2) : '0.00'}%`}
                     />
@@ -66,7 +66,6 @@ function App() {
             </div>
 
             <Title text="Statistics" />
-
             <Statistics good={good} neutral={neutral} bad={bad} />
         </div>
     )
