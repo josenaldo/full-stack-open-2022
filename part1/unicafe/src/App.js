@@ -17,6 +17,29 @@ const Statistic = ({ text, value }) => {
     )
 }
 
+const Statistics = ({ good, neutral, bad }) => {
+    const all = good + neutral + bad
+    const average = (good - bad) / all
+    const positive = (good / all) * 100
+
+    return (
+        <div className="statistics">
+            <Statistic text="Good" value={good} />
+            <Statistic text="Neutral" value={neutral} />
+            <Statistic text="Bad" value={bad} />
+            <Statistic text="All" value={all} />
+            <Statistic
+                text="Average"
+                value={average ? average.toFixed(2) : 0}
+            />
+            <Statistic
+                text="Positive"
+                value={`${positive ? positive.toFixed(2) : '0.00'}%`}
+            />
+        </div>
+    )
+}
+
 function App() {
     // save clicks of each button to its own state
     const [good, setGood] = useState(0)
@@ -37,20 +60,7 @@ function App() {
 
             <Title text="Statistics" />
 
-            <div className="statistics">
-                <Statistic text="Good" value={good} />
-                <Statistic text="Neutral" value={neutral} />
-                <Statistic text="Bad" value={bad} />
-                <Statistic text="All" value={good + neutral + bad} />
-                <Statistic
-                    text="Average"
-                    value={(good - bad) / (good + neutral + bad)}
-                />
-                <Statistic
-                    text="Positive"
-                    value={(good / (good + neutral + bad)) * 100 + '%'}
-                />
-            </div>
+            <Statistics good={good} neutral={neutral} bad={bad} />
         </div>
     )
 }
