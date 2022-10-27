@@ -18,6 +18,7 @@
 - Anecdotes
   - 1.12 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.12>
   - 1.13 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.13>
+  - 1.14 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.14>
 
 ## Notes
 
@@ -28,4 +29,3 @@
   - #696d77
   - #80858f
   - #ffffff
-
