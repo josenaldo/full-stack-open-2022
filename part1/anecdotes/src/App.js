@@ -2,10 +2,27 @@ import { useState } from 'react'
 
 import './App.css'
 
+const Title = ({ text }) => <h1>{text}</h1>
+
 const Anedocte = ({ anecdote }) => {
     return (
-        <div className="anecdote">
-            <h1>{anecdote}</h1>
+        <div className="card anecdote">
+            <h2>{anecdote}</h2>
+        </div>
+    )
+}
+
+const MostVoted = ({ anecdotes, votes }) => {
+    const mostVotes = votes.indexOf(Math.max(...votes))
+
+    if (votes[mostVotes] === 0) {
+        return <p>No votes yet</p>
+    }
+
+    return (
+        <div className="card most-voted">
+            <p>{anecdotes[mostVotes]}</p>
+            <p>has {votes[mostVotes]} votes</p>
         </div>
     )
 }
@@ -56,12 +73,16 @@ const App = () => {
 
     return (
         <div className="App">
+            <Title text="Anecdote of the day" />
             <Anedocte anecdote={anecdotes[selected]} />
 
             <div className="toolbar">
                 <button onClick={handleNextClick}>Next anecdote</button>
                 <button onClick={handleVoteClick}>Vote</button>
             </div>
+
+            <Title text="Anecdote with most votes" />
+            <MostVoted anecdotes={anecdotes} votes={votes} />
         </div>
     )
 }

@@ -21,5 +21,11 @@
 
 ## Notes
 
-- Palette used in exercises: <https://gka.github.io/palettes/#/3|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
+- Palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
+  - #282c34
+  - #3d4149
+  - #52565f
+  - #696d77
+  - #80858f
+  - #ffffff
 

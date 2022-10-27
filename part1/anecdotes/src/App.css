@@ -7,15 +7,26 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding: 0 40px;
+}
+
+.card {
+    margin: 20px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 .anecdote {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #282c34;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-    color: #282c34;
+    background-color: #52565f;
+    color: #ffffff;
+}
+
+.most-voted {
+    background-color: #696d77;
+    color: #ffffff;
 }
 
 button {
@@ -23,14 +34,14 @@ button {
     padding: 10px;
     margin: 10px;
     border: none;
-    background-color: #52565f;
+    background-color: #3d4149;
     color: white;
 }
 
 button:hover {
-    background-color: #80858f;
+    background-color: #52565f;
 }
 
 button:active {
-    background-color: #52565f;
+    background-color: #3d4149;
 }
