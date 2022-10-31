@@ -7,7 +7,7 @@ const Course = ({ course }) => {
         <div>
             <Header course={course} />
             <Content course={course} />
-            <Total course={course} />
+            <Total parts={course.parts} />
         </div>
     )
 }

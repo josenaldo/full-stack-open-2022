@@ -46,6 +46,7 @@ const App = () => {
             ],
         },
     ]
+
     return (
         <div className="App">
             {courses.map((course) => (
