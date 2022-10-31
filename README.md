@@ -23,6 +23,7 @@
 ### Part 2 - Communicating with server
 
 - [Content](https://fullstackopen.com/en/part2)
+- [Exercises](/part2/README.md)
 
 ### Part 3 - Programming a server with NodeJS and Express
 
