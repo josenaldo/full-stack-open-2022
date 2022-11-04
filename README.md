@@ -85,6 +85,12 @@ This area contains some extra projects that are not part of this course but are 
 - Github: [@josenaldo](https://github.com/josenaldo)
 - LinkedIn: [@josenaldo](https://linkedin.com/in/josenaldo)
 
+## References
+
+- [Padrões de commits](https://github.com/iuricode/padroes-de-commits/blob/main/README.md)
+- [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+- [Conventional Commits Pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
