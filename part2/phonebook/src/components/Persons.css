@@ -1,0 +1,17 @@
+table {
+    border: none;
+    min-width: 50%;
+}
+
+.person-name {
+    padding: 10px;
+}
+
+.person-number {
+    padding: 10px;
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #3d4149;
+}

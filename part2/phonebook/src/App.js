@@ -1,5 +1,7 @@
-import './App.css'
 import { useState } from 'react'
+import { Filter, PersonForm, Persons } from './components'
+
+import './App.css'
 
 const App = () => {
     const [persons, setPersons] = useState([
@@ -54,46 +56,19 @@ const App = () => {
     return (
         <div className="App">
             <h2>Phonebook</h2>
-            <div className="field">
-                <label>Filter show with:</label>
-                <input
-                    name="search"
-                    value={search}
-                    onChange={handleSearchChange}
-                />
-            </div>
+            <Filter value={search} onChange={handleSearchChange} />
 
             <h2>Add a new</h2>
-            <form className="form" onSubmit={handleSubmit}>
-                <div className="field">
-                    <label>Name:</label>
-                    <input
-                        name="newName"
-                        value={newName}
-                        onChange={handleNewNameChange}
-                    />
-                </div>
-                <div className="field">
-                    <label>Number:</label>
-                    <input
-                        name="number"
-                        value={newNumber}
-                        onChange={handleNewNumberChange}
-                    />
-                </div>
-                <div>
-                    <button type="submit">add</button>
-                </div>
-            </form>
-            <h2>Numbers</h2>
+            <PersonForm
+                onSubmit={handleSubmit}
+                newName={newName}
+                newNumber={newNumber}
+                handleNewNameChange={handleNewNameChange}
+                handleNewNumberChange={handleNewNumberChange}
+            />
 
-            <ul>
-                {personsToShow.map((person) => (
-                    <li key={person.id}>
-                        {person.name} - {person.number}{' '}
-                    </li>
-                ))}
-            </ul>
+            <h2>Numbers</h2>
+            <Persons persons={personsToShow} />
         </div>
     )
 }
