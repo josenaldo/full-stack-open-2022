@@ -6,6 +6,12 @@
   - 2.3 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.3>
   - 2.4 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.4>
   - 2.5 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.5>
+  - 2.6 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.6>
+  - 2.7 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.7>
+  - 2.8 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.8>
+  - 2.9 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.9>
+  - 2.9.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.9.1>
+  - 2.10 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.10>
 
 ## Notes
 
