@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const App = () => {
     const [persons, setPersons] = useState([
-        { name: 'Arto Hellas', number: '34-8598-4587' },
+        { id: 1, name: 'Arto Hellas', number: '34-8598-4587' },
     ])
     const [newName, setNewName] = useState('')
     const [newNumber, setNewNumber] = useState('')
@@ -25,6 +25,7 @@ const App = () => {
             alert(`${newName} is already added to phonebook`)
         } else {
             const person = {
+                id: persons.length + 1,
                 name: newName,
                 number: newNumber,
             }
@@ -63,7 +64,7 @@ const App = () => {
 
             <ul>
                 {persons.map((person) => (
-                    <li key={person.name}>
+                    <li key={person.id}>
                         {person.name} - {person.number}{' '}
                     </li>
                 ))}
