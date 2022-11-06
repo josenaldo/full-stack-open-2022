@@ -90,6 +90,7 @@ This area contains some extra projects that are not part of this course but are 
 - [Padrões de commits](https://github.com/iuricode/padroes-de-commits/blob/main/README.md)
 - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
 - [Conventional Commits Pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
+- [Json Server](https://github.com/typicode/json-server)
 
 ## Show your support
 
