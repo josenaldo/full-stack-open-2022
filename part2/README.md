@@ -13,8 +13,17 @@
   - 2.9 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.9>
   - 2.9.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.9.1>
   - 2.10 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.10>
+  - 2.11 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.11>
+- Countries
+  - 2.12 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.12>
+  - 2.13 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.13>
+  - 2.14 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.14>
 
 ## Notes
+
+- APIs
+  - [Weather Data](https://openweathermap.org/current)
+  - [Rest countries](https://restcountries.com/)
 
 - Palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
   - #282c34
