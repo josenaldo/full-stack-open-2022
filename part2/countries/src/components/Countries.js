@@ -1,7 +1,19 @@
+import { useState, useEffect } from 'react'
+import { Country } from 'components'
+
 import './Countries.css'
-import { Country } from './Country'
 
 const Countries = ({ countries }) => {
+    const [selectedCountry, setSelectedCountry] = useState(null)
+
+    useEffect(() => {
+        if (countries.length === 1) {
+            setSelectedCountry(countries[0])
+        } else {
+            setSelectedCountry(null)
+        }
+    }, [countries])
+
     return (
         <div className="countries">
             {countries.length > 10 && (
@@ -11,12 +23,21 @@ const Countries = ({ countries }) => {
             {countries.length <= 10 && countries.length > 1 && (
                 <div>
                     {countries.map((country) => (
-                        <div key={country.cca3}>{country.name.common}</div>
+                        <div key={country.cca3}>
+                            {country.name.common}{' '}
+                            <button
+                                onClick={() => {
+                                    setSelectedCountry(country)
+                                }}
+                            >
+                                show
+                            </button>
+                        </div>
                     ))}
                 </div>
             )}
 
-            {countries.length === 1 && <Country country={countries[0]} />}
+            {selectedCountry && <Country country={selectedCountry} />}
 
             {countries.length === 0 && <p>No matches</p>}
         </div>

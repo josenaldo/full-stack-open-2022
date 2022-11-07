@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import { Input, Countries } from './components'
+import { Input, Countries } from 'components'
 import axios from 'axios'
 
 import './App.css'
 
 const App = () => {
     const [countries, setCountries] = useState([])
+
     const [filter, setFilter] = useState('')
 
     const handleFilterChange = (event) => {
@@ -29,7 +30,7 @@ const App = () => {
 
     return (
         <div className="App">
-            <div class="wrapper">
+            <div className="wrapper">
                 <Input
                     label="Find countries"
                     name="filter"
