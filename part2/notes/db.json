@@ -41,6 +41,18 @@
       "date": "2022-11-08T16:47:24.124Z",
       "important": true,
       "id": 7
+    },
+    {
+      "content": "a new note...",
+      "date": "2022-11-08T17:27:29.728Z",
+      "important": false,
+      "id": 8
+    },
+    {
+      "content": "Teste",
+      "date": "2022-11-08T17:27:32.200Z",
+      "important": false,
+      "id": 9
     }
   ]
 }
