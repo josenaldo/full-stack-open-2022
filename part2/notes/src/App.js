@@ -17,6 +17,21 @@ const App = (props) => {
         setNewNote(event.target.value)
     }
 
+    useEffect(() => {
+        noteService.getAll().then((initialNotes) => {
+            setNotes(initialNotes)
+        })
+    }, [])
+
+    const toggleImportanceOf = (id) => {
+        const note = notes.find((n) => n.id === id)
+        const changeNote = { ...note, important: !note.important }
+
+        noteService.update(id, changeNote).then((returnedNote) => {
+            setNotes(notes.map((n) => (n.id !== id ? n : returnedNote)))
+        })
+    }
+
     const addNote = (event) => {
         event.preventDefault()
         const noteObject = {
@@ -25,29 +40,12 @@ const App = (props) => {
             important: Math.random() < 0.5,
         }
 
-        noteService.create(noteObject).then((response) => {
-            const createdNote = response.data
+        noteService.create(noteObject).then((returnedNote) => {
+            const createdNote = returnedNote
             setNotes(notes.concat(createdNote))
             setNewNote('')
         })
     }
-
-    const toggleImportanceOf = (id) => {
-        const note = notes.find((n) => n.id === id)
-        const changeNote = { ...note, important: !note.important }
-
-        noteService.update(id, changeNote).then((response) => {
-            setNotes(notes.map((n) => (n.id !== id ? n : response.data)))
-        })
-    }
-
-    const hook = () => {
-        noteService.getAll().then((response) => {
-            setNotes(response.data)
-        })
-    }
-
-    useEffect(hook, [])
 
     return (
         <div className="App">
