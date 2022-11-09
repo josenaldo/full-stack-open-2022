@@ -27,9 +27,17 @@ const App = (props) => {
         const note = notes.find((n) => n.id === id)
         const changeNote = { ...note, important: !note.important }
 
-        noteService.update(id, changeNote).then((returnedNote) => {
-            setNotes(notes.map((n) => (n.id !== id ? n : returnedNote)))
-        })
+        noteService
+            .update(id, changeNote)
+            .then((returnedNote) => {
+                setNotes(notes.map((n) => (n.id !== id ? n : returnedNote)))
+            })
+            .catch((error) => {
+                alert(
+                    `the note '${note.content}' was already deleted from server`
+                )
+                setNotes(notes.filter((n) => n.id !== id))
+            })
     }
 
     const addNote = (event) => {
