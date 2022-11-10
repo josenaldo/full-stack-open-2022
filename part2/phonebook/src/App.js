@@ -91,14 +91,24 @@ const App = () => {
         const message = `${person.name} is already added to phonebook, replace the old number with a new one?`
 
         if (window.confirm(message)) {
-            personServices.update(person, id).then((updatedPerson) => {
-                setPersons(
-                    persons.map((p) => (p.id === id ? updatedPerson : p))
-                )
-                setNewName('')
-                setNewNumber('')
-            })
-            showMessage(`Updated ${person.name}`, NOTIFICATION_LEVELS.success)
+            personServices
+                .update(person, id)
+                .then((updatedPerson) => {
+                    setPersons(
+                        persons.map((p) => (p.id === id ? updatedPerson : p))
+                    )
+                    setNewName('')
+                    setNewNumber('')
+                    showMessage(
+                        `Updated ${person.name}`,
+                        NOTIFICATION_LEVELS.success
+                    )
+                })
+                .catch((error) => {
+                    const message = `Information of ${person.name} has already been removed from server`
+                    showMessage(message, NOTIFICATION_LEVELS.error)
+                    setPersons(persons.filter((p) => p.id !== id))
+                })
         }
     }
 
@@ -107,7 +117,13 @@ const App = () => {
         const message = `Delete ${personToRemove.name}?`
 
         if (window.confirm(message)) {
-            personServices.remove(id)
+            personServices
+                .remove(id)
+                .then(() => {})
+                .catch((error) => {
+                    const message = `Information of ${personToRemove.name} has already been removed from server`
+                    showMessage(message, NOTIFICATION_LEVELS.error)
+                })
             setPersons(persons.filter((p) => p.id !== id))
         }
     }
