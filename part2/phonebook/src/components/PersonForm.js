@@ -1,4 +1,4 @@
-import { Input } from './Input'
+import { Input } from 'components'
 import './PersonForm.css'
 
 const PersonForm = ({

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Filter, PersonForm, Persons } from './components'
 
+import { Filter, PersonForm, Persons } from 'components'
 import './App.css'
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
         setSearch(event.target.value)
     }
 
-    const handleSubmit = (event) => {
+    const addPerson = (event) => {
         event.preventDefault()
 
         const existingName = persons.find((person) => person.name === newName)
@@ -38,24 +38,25 @@ const App = () => {
             alert(`${newName} is already added to phonebook`)
         } else {
             const person = {
-                id: persons.length + 1,
                 name: newName,
                 number: newNumber,
             }
 
-            setPersons(persons.concat(person))
-            setNewName('')
-            setNewNumber('')
+            axios
+                .post('http://localhost:3001/persons', person)
+                .then((response) => {
+                    setPersons(persons.concat(response.data))
+                    setNewName('')
+                    setNewNumber('')
+                })
         }
     }
 
-    const fetchPersons = () => {
+    useEffect(() => {
         axios.get('http://localhost:3001/persons').then((response) => {
             setPersons(response.data)
         })
-    }
-
-    useEffect(fetchPersons, [])
+    }, [])
 
     return (
         <div className="App">
@@ -64,7 +65,7 @@ const App = () => {
 
             <h2>Add a new</h2>
             <PersonForm
-                onSubmit={handleSubmit}
+                onSubmit={addPerson}
                 newName={newName}
                 newNumber={newNumber}
                 handleNewNameChange={handleNewNameChange}
