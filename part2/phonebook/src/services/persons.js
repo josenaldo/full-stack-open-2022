@@ -18,10 +18,17 @@ const remove = (id) => {
     return axios.delete(`${baseUrl}/${id}`)
 }
 
+const update = (person, id) => {
+    return axios.put(`${baseUrl}/${id}`, person).then((response) => {
+        return response.data
+    })
+}
+
 const personServices = {
     getAll,
     create,
     remove,
+    update,
 }
 
 export { personServices }

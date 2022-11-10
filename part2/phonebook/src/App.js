@@ -30,21 +30,39 @@ const App = () => {
         setNewNumber(event.target.value)
     }
 
-    const create = (event) => {
+    const createOrUpdate = (event) => {
         event.preventDefault()
 
-        const existingName = persons.find((p) => p.name === newName)
+        const person = {
+            name: newName,
+            number: newNumber,
+        }
 
-        if (existingName !== undefined) {
-            alert(`${newName} is already added to phonebook`)
+        const existingPerson = persons.find((p) => p.name === newName)
+
+        if (existingPerson !== undefined) {
+            update(person, existingPerson.id)
         } else {
-            const person = {
-                name: newName,
-                number: newNumber,
-            }
+            create(person)
+        }
+    }
 
-            personServices.create(person).then((createdPerson) => {
-                setPersons(persons.concat(createdPerson))
+    const create = (person) => {
+        personServices.create(person).then((createdPerson) => {
+            setPersons(persons.concat(createdPerson))
+            setNewName('')
+            setNewNumber('')
+        })
+    }
+
+    const update = (person, id) => {
+        const message = `${person.name} is already added to phonebook, replace the old number with a new one?`
+
+        if (window.confirm(message)) {
+            personServices.update(person, id).then((updatedPerson) => {
+                setPersons(
+                    persons.map((p) => (p.id === id ? updatedPerson : p))
+                )
                 setNewName('')
                 setNewNumber('')
             })
@@ -74,7 +92,7 @@ const App = () => {
 
             <h2>Add a new</h2>
             <PersonForm
-                onSubmit={create}
+                onSubmit={createOrUpdate}
                 newName={newName}
                 newNumber={newNumber}
                 handleNewNameChange={handleNewNameChange}
