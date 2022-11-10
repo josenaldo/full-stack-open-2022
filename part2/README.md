@@ -14,6 +14,10 @@
   - 2.9.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.9.1>
   - 2.10 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.10>
   - 2.11 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.11>
+  - 2.15 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.15>
+  - 2.16 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.16>
+  - 2.17 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.17>
+  - 2.18 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.18>
 - Countries
   - 2.12 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.12>
   - 2.13 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.13>
