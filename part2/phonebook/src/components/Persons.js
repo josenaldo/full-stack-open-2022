@@ -1,6 +1,6 @@
 import './Persons.css'
 
-const Persons = ({ persons }) => {
+const Persons = ({ persons, remove }) => {
     return (
         <table cellspacing="0" cellpadding="0">
             <tbody>
@@ -8,6 +8,11 @@ const Persons = ({ persons }) => {
                     <tr key={person.id}>
                         <td className="person-name">{person.name}</td>
                         <td className="person-number">{person.number}</td>
+                        <td className="person-delete">
+                            <button onClick={() => remove(person.id)}>
+                                Delete
+                            </button>
+                        </td>
                     </tr>
                 ))}
             </tbody>

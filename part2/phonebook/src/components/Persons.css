@@ -12,6 +12,10 @@ table {
     text-align: right;
 }
 
+.person-delete {
+    text-align: center;
+}
+
 tr:nth-child(even) {
     background-color: #3d4149;
 }

@@ -14,9 +14,14 @@ const create = (person) => {
     })
 }
 
+const remove = (id) => {
+    return axios.delete(`${baseUrl}/${id}`)
+}
+
 const personServices = {
     getAll,
     create,
+    remove,
 }
 
 export { personServices }

@@ -18,6 +18,10 @@ const App = () => {
           )
         : persons
 
+    const handleSearchChange = (event) => {
+        setSearch(event.target.value)
+    }
+
     const handleNewNameChange = (event) => {
         setNewName(event.target.value)
     }
@@ -26,14 +30,10 @@ const App = () => {
         setNewNumber(event.target.value)
     }
 
-    const handleSearchChange = (event) => {
-        setSearch(event.target.value)
-    }
-
-    const addPerson = (event) => {
+    const create = (event) => {
         event.preventDefault()
 
-        const existingName = persons.find((person) => person.name === newName)
+        const existingName = persons.find((p) => p.name === newName)
 
         if (existingName !== undefined) {
             alert(`${newName} is already added to phonebook`)
@@ -51,6 +51,16 @@ const App = () => {
         }
     }
 
+    const remove = (id) => {
+        const personToRemove = persons.find((p) => p.id === id)
+        const message = `Delete ${personToRemove.name}?`
+
+        if (window.confirm(message)) {
+            personServices.remove(id)
+            setPersons(persons.filter((p) => p.id !== id))
+        }
+    }
+
     useEffect(() => {
         personServices.getAll().then((persons) => {
             setPersons(persons)
@@ -64,7 +74,7 @@ const App = () => {
 
             <h2>Add a new</h2>
             <PersonForm
-                onSubmit={addPerson}
+                onSubmit={create}
                 newName={newName}
                 newNumber={newNumber}
                 handleNewNameChange={handleNewNameChange}
@@ -72,7 +82,7 @@ const App = () => {
             />
 
             <h2>Numbers</h2>
-            <Persons persons={personsToShow} />
+            <Persons persons={personsToShow} remove={remove} />
         </div>
     )
 }
