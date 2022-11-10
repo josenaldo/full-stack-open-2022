@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 
-import { Filter, PersonForm, Persons } from 'components'
+import {
+    Filter,
+    PersonForm,
+    Persons,
+    Notification,
+    NOTIFICATION_LEVELS,
+} from 'components'
 import { personServices } from 'services'
 
 import './App.css'
@@ -11,6 +17,9 @@ const App = () => {
     const [newName, setNewName] = useState('')
     const [newNumber, setNewNumber] = useState('')
     const [search, setSearch] = useState('')
+
+    const [message, setMessage] = useState(null)
+    const [messageTimeout, setMessageTimeout] = useState(null)
 
     const personsToShow = search
         ? persons.filter((person) =>
@@ -28,6 +37,28 @@ const App = () => {
 
     const handleNewNumberChange = (event) => {
         setNewNumber(event.target.value)
+    }
+
+    const showMessage = (text, level) => {
+        const message = {
+            text: text,
+            level: level,
+            timeout: null,
+        }
+
+        if (messageTimeout) {
+            clearTimeout(messageTimeout)
+            setMessageTimeout(null)
+        }
+
+        setMessage(message)
+
+        const timeout = setTimeout(() => {
+            setMessage(null)
+            setMessageTimeout(null)
+        }, 6000)
+
+        setMessageTimeout(timeout)
     }
 
     const createOrUpdate = (event) => {
@@ -53,6 +84,7 @@ const App = () => {
             setNewName('')
             setNewNumber('')
         })
+        showMessage(`Added ${person.name}`, NOTIFICATION_LEVELS.success)
     }
 
     const update = (person, id) => {
@@ -66,6 +98,7 @@ const App = () => {
                 setNewName('')
                 setNewNumber('')
             })
+            showMessage(`Updated ${person.name}`, NOTIFICATION_LEVELS.success)
         }
     }
 
@@ -82,15 +115,19 @@ const App = () => {
     useEffect(() => {
         personServices.getAll().then((persons) => {
             setPersons(persons)
+            showMessage('Application started', NOTIFICATION_LEVELS.info)
         })
     }, [])
 
     return (
         <div className="App">
+            <Notification message={message} />
+
             <h2>Phonebook</h2>
             <Filter value={search} onChange={handleSearchChange} />
 
             <h2>Add a new</h2>
+
             <PersonForm
                 onSubmit={createOrUpdate}
                 newName={newName}

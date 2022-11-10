@@ -2,7 +2,7 @@ import './Persons.css'
 
 const Persons = ({ persons, remove }) => {
     return (
-        <table cellspacing="0" cellpadding="0">
+        <table cellSpacing="0" cellPadding="0">
             <tbody>
                 {persons.map((person) => (
                     <tr key={person.id}>
