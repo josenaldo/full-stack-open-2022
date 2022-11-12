@@ -28,6 +28,7 @@
 ### Part 3 - Programming a server with NodeJS and Express
 
 - [Content](https://fullstackopen.com/en/part3)
+- [Exercises](/part3/README.md)
 
 ### Part 4 - Testing Express servers, user administration
 
