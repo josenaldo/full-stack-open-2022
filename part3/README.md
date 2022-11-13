@@ -16,6 +16,11 @@ Each tag contains one exercise's answer:
 
 ## Notes
 
+### Libs
+
+- [Morgan](https://github.com/expressjs/morgan)
+
+
 - Palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
   - #282c34
   - #3d4149

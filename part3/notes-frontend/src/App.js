@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 import Note from 'components/Note'
 import Notification from 'components/Notification'
@@ -12,7 +11,7 @@ const App = (props) => {
     const [notes, setNotes] = useState([])
     const [newNote, setNewNote] = useState('a new note...')
     const [showAll, setShowAll] = useState(true)
-    const [errorMessage, setErrorMessage] = useState('some error happened...')
+    const [errorMessage, setErrorMessage] = useState(null)
 
     const notesToShow = showAll ? notes : notes.filter((note) => note.important)
 
@@ -21,9 +20,14 @@ const App = (props) => {
     }
 
     useEffect(() => {
-        noteService.getAll().then((initialNotes) => {
-            setNotes(initialNotes)
-        })
+        noteService
+            .getAll()
+            .then((initialNotes) => {
+                setNotes(initialNotes)
+            })
+            .catch((error) => {
+                setErrorMessage(`Erro: ${error}`)
+            })
     }, [])
 
     const toggleImportanceOf = (id) => {
@@ -50,6 +54,7 @@ const App = (props) => {
 
     const addNote = (event) => {
         event.preventDefault()
+
         const noteObject = {
             content: newNote,
             date: new Date(),
