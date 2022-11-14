@@ -4,6 +4,9 @@ As requested by the exercise, a new repository was created for this app: <https:
 
 Each tag contains one exercise's answer:
 
+- Application (backend + frontend on build dir)
+  - <https://jomf-fso2022-phonebook-backend.fly.dev/>
+
 - Phonebook backend
   - 3.1 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.1>
   - 3.2 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.2>
