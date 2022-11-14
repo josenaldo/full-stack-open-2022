@@ -42,9 +42,16 @@ const requestLogger = (request, response, next) => {
 app.use(cors())
 app.use(express.json())
 app.use(requestLogger)
+app.use(express.static('build'))
 
 app.get('/', (request, response) => {
-    response.send('<h1>Hello World again!<h1>')
+    const html = `<html>
+        <body>
+            <h1>Hello World again!</h1>
+            <a href="/api/notes">Notes</a>
+        </body>
+    </html>`
+    response.send(html)
 })
 
 app.get('/api/notes', (request, response) => {

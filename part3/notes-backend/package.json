@@ -6,7 +6,13 @@
     "scripts": {
         "start": "node index.js",
         "dev": "nodemon index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "npx rimraf build",
+        "copy:ui": "cd ../notes-frontend/ && npx cpy-cli build ../notes-backend",
+        "build:ui": "yarn clean && cd ../notes-frontend/ && yarn build && cd ../notes-backend/ && yarn copy:ui",
+        "deploy": "flyctl deploy",
+        "deploy:full": "yarn build:ui && yarn deploy",
+        "logs:prod": "flyctl logs"
     },
     "author": "Josenaldo de Oliveira Matos Filho",
     "license": "MIT",
