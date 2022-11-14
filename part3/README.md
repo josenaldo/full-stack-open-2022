@@ -13,13 +13,19 @@ Each tag contains one exercise's answer:
   - 3.6 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.6>
   - 3.7 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.7>
   - 3.8 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.8>
+  - 3.9 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.9>
+  - 3.10 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.10>
+  - 3.11 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.11>
+
+- Phonebook frontend
+  - 3.9 - <https://github.com/josenaldo/fso2022-phonebook-frontend/releases/tag/part3-ex-3.9>
+  - 3.11 - <https://github.com/josenaldo/fso2022-phonebook-frontend/releases/tag/part3-ex-3.11>
 
 ## Notes
 
 ### Libs
 
 - [Morgan](https://github.com/expressjs/morgan)
-
 
 - Palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
   - #282c34
