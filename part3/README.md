@@ -19,6 +19,7 @@ Each tag contains one exercise's answer:
   - 3.9 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.9>
   - 3.10 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.10>
   - 3.11 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.11>
+  - 3.12 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.12>
 
 - Phonebook frontend
   - 3.9 - <https://github.com/josenaldo/fso2022-phonebook-frontend/releases/tag/part3-ex-3.9>
