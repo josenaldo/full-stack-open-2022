@@ -1,27 +1,40 @@
 const express = require('express')
 const cors = require('cors')
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+
+dotenv.config()
 const app = express()
 
-let notes = [
-    {
-        id: 1,
-        content: 'HTML is easy',
-        date: '2022-05-30T17:30:31.098Z',
-        important: true,
+const getUrl = () => {
+    const password = encodeURIComponent(process.env.MONGODB_PASSWORD)
+    console.log('🔴 | file: index.js | line 9 | getUrl | password', password)
+
+    const user = 'fullstack'
+    const cluster = 'cluster-fs0-2022-notes.kh7dd2q.mongodb.net'
+    const database = 'notesApp'
+    const url = `mongodb+srv://${user}:${password}@${cluster}/${database}?retryWrites=true&w=majority`
+
+    return url
+}
+
+mongoose.connect(getUrl())
+
+const noteSchema = new mongoose.Schema({
+    content: String,
+    date: Date,
+    important: Boolean,
+})
+
+noteSchema.set('toJSON', {
+    transform: (document, returnedObject) => {
+        returnedObject.id = returnedObject._id.toString()
+        delete returnedObject._id
+        delete returnedObject.__v
     },
-    {
-        id: 2,
-        content: 'Browser can execute only Javascript',
-        date: '2022-05-30T18:39:34.091Z',
-        important: false,
-    },
-    {
-        id: 3,
-        content: 'GET and POST are the most important methods of HTTP protocol',
-        date: '2022-05-30T19:20:14.298Z',
-        important: true,
-    },
-]
+})
+
+const Note = mongoose.model('Note', noteSchema)
 
 const generateId = () => {
     const maxId = notes.length > 0 ? Math.max(...notes.map((n) => n.id)) : 0
@@ -44,18 +57,10 @@ app.use(express.json())
 app.use(requestLogger)
 app.use(express.static('build'))
 
-app.get('/', (request, response) => {
-    const html = `<html>
-        <body>
-            <h1>Hello World again!</h1>
-            <a href="/api/notes">Notes</a>
-        </body>
-    </html>`
-    response.send(html)
-})
-
 app.get('/api/notes', (request, response) => {
-    response.json(notes)
+    return Note.find({}).then((notes) => {
+        response.json(notes)
+    })
 })
 
 app.get('/api/notes/:id', (request, response) => {
