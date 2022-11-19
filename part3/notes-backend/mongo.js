@@ -22,42 +22,66 @@ const noteSchema = new mongoose.Schema({
 
 const Note = mongoose.model('Note', noteSchema)
 
-let notes = [
-    {
-        content: 'HTML is easy',
-        date: new Date(),
-        important: true,
-    },
-    {
-        content: 'Browser can execute only Javascript',
-        date: new Date(),
-        important: false,
-    },
-    {
-        content: 'GET and POST are the most important methods of HTTP protocol',
-        date: new Date(),
-        important: true,
-    },
-]
+const find = () => {
+    mongoose
+        .connect(url)
+        .then((result) => {
+            Note.find({ important: true })
+                .then((result) => {
+                    console.log(`🔴 F: mongo.js | L: 31 | Result:`, result)
+                })
+                .catch((err) => {})
+                .finally(() => {
+                    mongoose.connection.close()
+                })
+        })
+        .catch((err) => {})
+}
 
-mongoose
-    .connect(url)
-    .then((result) => {
-        console.log('🔴 | file: mongo.js | line 44 | Conectado')
+const create = () => {
+    let notes = [
+        {
+            content: 'HTML is easy',
+            date: new Date(),
+            important: true,
+        },
+        {
+            content: 'Browser can execute only Javascript',
+            date: new Date(),
+            important: false,
+        },
+        {
+            content:
+                'GET and POST are the most important methods of HTTP protocol',
+            date: new Date(),
+            important: true,
+        },
+    ]
 
-        Note.insertMany(notes)
-            .then((result) => {
-                console.log('🔴 | file: mongo.js | line 48 | Notas salvas')
-            })
-            .catch((error) => {
-                console.log('🔴 | file: mongo.js | line 51 | Erro', error)
-            })
-            .finally(() => {
-                console.log('🔴 | file: mongo.js | line 54 | Encerrando')
+    mongoose
+        .connect(url)
+        .then((result) => {
+            console.log('🔴 | file: mongo.js | line 44 | Conectado')
 
-                return mongoose.connection.close()
-            })
-    })
-    .catch((error) => {
-        console.log('🔴 | file: mongo.js | line 60 | Erro ao conectar', error)
-    })
+            Note.insertMany(notes)
+                .then((result) => {
+                    console.log('🔴 | file: mongo.js | line 48 | Notas salvas')
+                })
+                .catch((error) => {
+                    console.log('🔴 | file: mongo.js | line 51 | Erro', error)
+                })
+                .finally(() => {
+                    console.log('🔴 | file: mongo.js | line 54 | Encerrando')
+
+                    return mongoose.connection.close()
+                })
+        })
+        .catch((error) => {
+            console.log(
+                '🔴 | file: mongo.js | line 60 | Erro ao conectar',
+                error
+            )
+        })
+}
+
+find()
