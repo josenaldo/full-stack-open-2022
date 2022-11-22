@@ -1,85 +1,47 @@
+/**
+ * CONFIGURATION
+ */
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
-const mongoose = require('mongoose')
-const dotenv = require('dotenv')
 
-dotenv.config()
+const morgan = require('morgan')
+morgan.token('body', (request, response) => {
+    const body = request.body
+    if (body) {
+        return JSON.stringify(body)
+    } else {
+        return null
+    }
+})
+
+const Note = require('./models/note')
+
 const app = express()
-
-const getUrl = () => {
-    const password = encodeURIComponent(process.env.MONGODB_PASSWORD)
-    console.log('🔴 | file: index.js | line 9 | getUrl | password', password)
-
-    const user = 'fullstack'
-    const cluster = 'cluster-fs0-2022-notes.kh7dd2q.mongodb.net'
-    const database = 'notesApp'
-    const url = `mongodb+srv://${user}:${password}@${cluster}/${database}?retryWrites=true&w=majority`
-
-    return url
-}
-
-mongoose.connect(getUrl())
-
-const noteSchema = new mongoose.Schema({
-    content: String,
-    date: Date,
-    important: Boolean,
-})
-
-noteSchema.set('toJSON', {
-    transform: (document, returnedObject) => {
-        returnedObject.id = returnedObject._id.toString()
-        delete returnedObject._id
-        delete returnedObject.__v
-    },
-})
-
-const Note = mongoose.model('Note', noteSchema)
-
-const generateId = () => {
-    const maxId = notes.length > 0 ? Math.max(...notes.map((n) => n.id)) : 0
-
-    return maxId + 1
-}
-
-const requestLogger = (request, response, next) => {
-    console.log('🟢 New Reques incoming!')
-    console.log('---')
-    console.log('Method:', request.method)
-    console.log('Path:  ', request.path)
-    console.log('Body:  ', request.body)
-    console.log('---')
-    next()
-}
 
 app.use(cors())
 app.use(express.json())
-app.use(requestLogger)
+app.use(
+    morgan(`---
+PATH: :url
+METHOD: :method
+STATUS: :status
+RES TIME: :response-time ms
+RES LENGTH: :res[content-length]
+BODY: :body
+---`)
+)
+
 app.use(express.static('build'))
+
+/**
+ * ROUTES
+ */
 
 app.get('/api/notes', (request, response) => {
     return Note.find({}).then((notes) => {
         response.json(notes)
     })
-})
-
-app.get('/api/notes/:id', (request, response) => {
-    const id = Number(request.params.id)
-
-    const note = notes.find((note) => note.id === id)
-
-    if (note) {
-        response.json(note)
-    } else {
-        response.status(404).end()
-    }
-})
-
-app.delete('/api/notes/:id', (request, response) => {
-    const id = Number(request.params.id)
-    notes = notes.filter((note) => note.id !== id)
-
-    response.status(204).end()
 })
 
 app.post('/api/notes', (request, response) => {
@@ -89,19 +51,49 @@ app.post('/api/notes', (request, response) => {
         return response.status(400).json({ error: 'content missing' })
     }
 
-    const note = {
-        id: generateId(),
+    const note = new Note({
         content: body.content,
-        data: new Date(),
         important: body.important || false,
-    }
+        data: new Date(),
+    })
 
-    notes = notes.concat(note)
-
-    response.json(note)
+    note.save().then((savedNote) => {
+        response.json(savedNote)
+    })
 })
 
-const PORT = process.env.PORT || 3001
+app.get('/api/notes/:id', (request, response) => {
+    const id = request.params.id
+
+    Note.findById(id)
+        .then((note) => {
+            response.json(note)
+        })
+        .catch((err) => {
+            console.log('🔴', err)
+            response.status(404).end()
+        })
+})
+
+app.delete('/api/notes/:id', (request, response) => {
+    const id = request.params.id
+
+    Note.deleteOne({ _id: id })
+        .then((result) => {
+            console.log('🟢', result)
+            response.status(204).end()
+        })
+        .catch((err) => {
+            console.log('🔴', err)
+            response.status(500).end()
+        })
+})
+
+/**
+ * SERVER
+ */
+
+const PORT = process.env.PORT
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
