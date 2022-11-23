@@ -25,6 +25,8 @@ Each tag contains one exercise's answer:
   - 3.15 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.15>
   - 3.16 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.16>
   - 3.17 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.17>
+  - 3.18 - <https://github.com/josenaldo/fso2022-phonebook-backend/releases/tag/part3-ex-3.18>
+    - Same code as 3.17, because these requirements were coded before.
 
 - Phonebook frontend
   - 3.9 - <https://github.com/josenaldo/fso2022-phonebook-frontend/releases/tag/part3-ex-3.9>
