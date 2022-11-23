@@ -2,6 +2,17 @@ POST http://localhost:3001/api/notes
 content-type: application/json
 
 {
-    "content": "Teste do REST Client",
+    "content": "Creating a new note",
+    "important": true
+}
+
+###
+
+# Testing validation
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{
+    "content": "Lol",
     "important": true
 }
