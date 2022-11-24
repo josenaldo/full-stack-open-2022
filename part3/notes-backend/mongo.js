@@ -8,11 +8,15 @@ if (process.env.length > 3) {
     process.exit(1)
 }
 
-const password = encodeURIComponent(process.argv[2])
-const user = 'fullstack'
-const cluster = 'cluster-fs0-2022-notes.kh7dd2q.mongodb.net'
-const database = 'notesApp'
-const url = `mongodb+srv://${user}:${password}@${cluster}/${database}?retryWrites=true&w=majority`
+const getUrl = () => {
+    const password = encodeURIComponent(process.argv[2])
+    const user = 'fullstack'
+    const cluster = 'cluster-fs0-2022-notes.kh7dd2q.mongodb.net'
+    const database = 'notesApp'
+    const url = `mongodb+srv://${user}:${password}@${cluster}/${database}?retryWrites=true&w=majority`
+
+    return url
+}
 
 const noteSchema = new mongoose.Schema({
     content: String,
@@ -24,11 +28,11 @@ const Note = mongoose.model('Note', noteSchema)
 
 const find = () => {
     mongoose
-        .connect(url)
+        .connect(getUrl())
         .then((result) => {
             Note.find({ important: true })
                 .then((result) => {
-                    console.log(`🔴 F: mongo.js | L: 31 | Result:`, result)
+                    console.log('🔴 F: mongo.js | L: 31 | Result:', result)
                 })
                 .catch((err) => {})
                 .finally(() => {
@@ -38,7 +42,7 @@ const find = () => {
         .catch((err) => {})
 }
 
-const create = () => {
+const create = (noteContent) => {
     let notes = [
         {
             content: 'HTML is easy',
@@ -56,10 +60,15 @@ const create = () => {
             date: new Date(),
             important: true,
         },
+        {
+            content: noteContent,
+            date: new Date(),
+            important: true,
+        },
     ]
 
     mongoose
-        .connect(url)
+        .connect(getUrl())
         .then((result) => {
             console.log('🔴 | file: mongo.js | line 44 | Conectado')
 
@@ -84,4 +93,26 @@ const create = () => {
         })
 }
 
-find()
+const main = () => {
+    if (process.argv.length < 3) {
+        console.log(
+            'please provide the password as an argument: node mongo.js <password>'
+        )
+
+        process.exit(1)
+    }
+
+    if (process.argv.length === 3) {
+        find()
+    }
+
+    if (process.argv.length === 4) {
+        create(process.argv[3])
+    }
+
+    if (process.argv.length > 4) {
+        console.log('Too many arguments')
+    }
+}
+
+main()
