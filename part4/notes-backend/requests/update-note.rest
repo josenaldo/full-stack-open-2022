@@ -1,0 +1,17 @@
+PUT http://localhost:3001/api/notes/637e5e05ac27437d18a9d4e0
+content-type: application/json
+
+{
+    "content": "Content updated"
+}
+
+###
+
+#  Validation
+
+PUT http://localhost:3001/api/notes/637e5e05ac27437d18a9d4e0
+content-type: application/json
+
+{
+    "content": "con"
+}
