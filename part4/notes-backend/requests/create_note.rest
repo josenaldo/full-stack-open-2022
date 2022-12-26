@@ -16,3 +16,13 @@ content-type: application/json
     "content": "Lol",
     "important": true
 }
+
+###
+
+# Note without content can't be added and must returnm400
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{
+    "important": true
+}
