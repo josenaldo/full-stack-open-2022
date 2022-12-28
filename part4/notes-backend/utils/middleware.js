@@ -19,15 +19,11 @@ RES LENGTH: :res[content-length]
 BODY: :body
 ---`
 
-// const requestLogger = (request, response, next) => {
-//     logger.info('Method:', request.method)
-//     logger.info('Path:  ', request.path)
-//     logger.info('Body:  ', request.body)
-//     logger.info('---')
-//     next()
-// }
-
-const requestLogger = morgan(morganTemplate)
+const requestLogger = morgan(morganTemplate, {
+    skip: function (req, res) {
+        return process.env.NODE_ENV === 'test'
+    },
+})
 
 const unknownEndpoint = (request, response) => {
     response.status(404).send({ error: 'unknown endpoint' })
