@@ -6,7 +6,7 @@
     "scripts": {
         "start": "cross-env NODE_ENV=production node index.js",
         "dev": "cross-env NODE_ENV=development nodemon index.js",
-        "test": "cross-env NODE_ENV=test jest --verbose --runInBand -forceExit --all",
+        "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit --all",
         "clean": "npx rimraf build",
         "copy:ui": "cd ../notes-frontend/ && npx cpy-cli build ../notes-backend",
         "build:ui": "yarn clean && cd ../notes-frontend/ && yarn build && cd ../notes-backend/ && yarn copy:ui",

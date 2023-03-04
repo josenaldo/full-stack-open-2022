@@ -1,0 +1,92 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "notes-frontend",
+            "path": "part4/notes-frontend"
+        },
+        {
+            "name": "notes-backend",
+            "path": "part4/notes-backend"
+        },
+        {
+            "name": "notes-frontend",
+            "path": "part3/notes-frontend"
+        },
+        {
+            "name": "notes-backend",
+            "path": "part3/notes-backend"
+        },
+        {
+            "name": "phonebook",
+            "path": "part2/phonebook"
+        },
+        {
+            "name": "notes",
+            "path": "part2/notes"
+        },
+        {
+            "name": "courseinfo",
+            "path": "part2/courseinfo"
+        },
+        {
+            "name": "countries",
+            "path": "part2/countries"
+        },
+        {
+            "name": "unicafe",
+            "path": "part1/unicafe"
+        },
+        {
+            "name": "hello",
+            "path": "part1/hello"
+        },
+        {
+            "name": "courseinfo",
+            "path": "part1/courseinfo"
+        },
+        {
+            "name": "complex-state",
+            "path": "part1/complex-state"
+        },
+        {
+            "name": "anecdotes",
+            "path": "part1/anecdotes"
+        },
+        {
+            "name": "function-return-function",
+            "path": "extras/function-return-function"
+        }
+    ],
+    "settings": {
+        "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#93e6fc",
+            "activityBar.background": "#93e6fc",
+            "activityBar.foreground": "#15202b",
+            "activityBar.inactiveForeground": "#15202b99",
+            "activityBarBadge.background": "#fa45d4",
+            "activityBarBadge.foreground": "#15202b",
+            "commandCenter.border": "#15202b99",
+            "sash.hoverBorder": "#93e6fc",
+            "statusBar.background": "#61dafb",
+            "statusBar.foreground": "#15202b",
+            "statusBarItem.hoverBackground": "#2fcefa",
+            "statusBarItem.remoteBackground": "#61dafb",
+            "statusBarItem.remoteForeground": "#15202b",
+            "titleBar.activeBackground": "#61dafb",
+            "titleBar.activeForeground": "#15202b",
+            "titleBar.inactiveBackground": "#61dafb99",
+            "titleBar.inactiveForeground": "#15202b99"
+        },
+        "peacock.color": "#61dafb",
+        "grammarly.selectors": [
+            {
+                "language": "markdown",
+                "scheme": "file"
+            }
+        ],
+        "jest.disabledWorkspaceFolders": ["full-stack-open-2022"]
+    }
+}
