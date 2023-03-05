@@ -14,3 +14,10 @@ Each tag contains one exercise's answer:
   - 4.5 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.5>
   - 4.6 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.6>
   - 4.7 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.7>
+  - 4.8 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.8>
+  - 4.9 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.9>
+  - 4.10 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.10>
+  - 4.11 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.11>
+  - 4.12 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.12>
+  - 4.13 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.13>
+  - 4.14 - <https://github.com/josenaldo/fso2022-bloglist-backend/releases/tag/part4-ex-4.14>
