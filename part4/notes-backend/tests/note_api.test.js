@@ -14,7 +14,6 @@ beforeEach(async () => {
 
 describe('when there is initially some notes saved', () => {
     test('notes are returned as json', async () => {
-        console.log('entered test')
         await api
             .get('/api/notes')
             .expect(200)
@@ -54,8 +53,6 @@ describe('viewing a specific note', () => {
 
     test('fails with statuscode 404 if note does not exist', async () => {
         const validNonexistingId = await helper.nonExistingId()
-
-        console.log(validNonexistingId)
 
         await api.get(`/api/notes/${validNonexistingId}`).expect(404)
     })
