@@ -93,7 +93,7 @@ describe('addition of a new note', () => {
 
         await api
             .post('/api/notes')
-            .set('Authorization', `Bearer ${token}`)
+            .auth(token, { type: 'bearer' })
             .send(newNote)
             .expect(201)
             .expect('Content-Type', /application\/json/)
