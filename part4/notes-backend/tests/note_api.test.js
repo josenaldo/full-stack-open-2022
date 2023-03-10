@@ -8,8 +8,16 @@ const api = supertest(app)
 const Note = require('../models/note')
 
 beforeEach(async () => {
+    await helper.resetInitialUser()
     await Note.deleteMany({})
-    await Note.insertMany(helper.initialNotes)
+
+    const usersInDb = await helper.usersInDb()
+    const user = usersInDb[0]
+    const notes = helper.initialNotes.map((n) => {
+        return { ...n, user: user.id }
+    })
+
+    await Note.insertMany(notes)
 }, 10000)
 
 describe('when there is initially some notes saved', () => {
@@ -32,6 +40,16 @@ describe('when there is initially some notes saved', () => {
         const contents = response.body.map((r) => r.content)
 
         expect(contents).toContain('Browser can execute only Javascript')
+    })
+
+    test('all notes must have an user', async () => {
+        const response = await api.get('/api/notes')
+
+        const notesWithoutUser = response.body.filter(
+            (r) => r.user === undefined
+        )
+
+        expect(notesWithoutUser).toHaveLength(0)
     })
 })
 
@@ -66,6 +84,8 @@ describe('viewing a specific note', () => {
 
 describe('addition of a new note', () => {
     test('succeeds with valid data', async () => {
+        const token = await helper.login('testuser', 'sekret')
+
         const newNote = {
             content: 'async/await simplifies making async calls',
             important: true,
@@ -73,6 +93,7 @@ describe('addition of a new note', () => {
 
         await api
             .post('/api/notes')
+            .set('Authorization', `Bearer ${token}`)
             .send(newNote)
             .expect(201)
             .expect('Content-Type', /application\/json/)

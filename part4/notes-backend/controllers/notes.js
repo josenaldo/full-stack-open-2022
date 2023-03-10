@@ -1,6 +1,21 @@
+const jwt = require('jsonwebtoken')
+
 const notesRouter = require('express').Router()
 const Note = require('../models/note')
 const User = require('../models/user')
+
+/**
+ * Extrai o token de autenticação de um objeto de requisição HTTP.
+ * @param {Object} request - Objeto representando a requisição HTTP.
+ * @returns {string|null} - O token de autenticação, ou null caso ele não esteja presente.
+ */
+const getTokenFrom = (request) => {
+    const authorization = request.get('authorization')
+    if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+        return authorization.substring(7)
+    }
+    return null
+}
 
 notesRouter.get('/', async (request, response) => {
     const notes = await Note.find({}).populate('user', {
@@ -12,15 +27,22 @@ notesRouter.get('/', async (request, response) => {
 })
 
 notesRouter.post('/', async (request, response) => {
-    const { content, important, userId } = request.body
+    const { content, important } = request.body
 
-    const user = await User.findById(userId)
+    const token = getTokenFrom(request)
+    const decodedToken = jwt.verify(token, process.env.SECRET)
+
+    if (!decodedToken.id) {
+        return response.status(401).json({ error: 'token invalid' })
+    }
+
+    const user = await User.findById(decodedToken.id)
 
     const note = new Note({
         content: content,
         important: important || false,
         date: new Date(),
-        user: user.id,
+        user: user._id,
     })
 
     const savedNote = await note.save()
