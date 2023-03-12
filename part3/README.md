@@ -1,6 +1,9 @@
 # Part 3 Exercises
 
-As requested by the exercise, a new repository was created for this app: <https://github.com/josenaldo/fso2022-phonebook-backend>
+As requested by the exercises, two new repositories were created for this app:
+
+- <https://github.com/josenaldo/fso2022-phonebook-backend>
+- <https://github.com/josenaldo/fso2022-phonebook-frontend/>
 
 Each tag contains one exercise's answer:
 
@@ -51,7 +54,7 @@ Each tag contains one exercise's answer:
 
 - [Morgan](https://github.com/expressjs/morgan)
 
-- Palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
+- The palette used in exercises: <https://gka.github.io/palettes/#/5|s|282c34,52565f,80858f|ffffe0,ff005e,93003a|1|1>
   - #282c34
   - #3d4149
   - #52565f

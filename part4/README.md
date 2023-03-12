@@ -1,6 +1,6 @@
 # Part 4 Exercises
 
-As requested by the exercise, a new repository was created for this app: <https://github.com/josenaldo/fso2022-phonebook-backend>
+As requested by the exercise, a new repository was created for this app: <https://github.com/josenaldo/fso2022-bloglist-backend>
 
 Each tag contains one exercise's answer:
 
