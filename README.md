@@ -89,6 +89,20 @@
 - Notes Redux
   - Frontend: <https://github.com/josenaldo/fso2022-notes-redux>
 
+## Docs
+
+- [React](https://react.dev/learn)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Vite](https://vitejs.dev/guide/)
+- [Mongoose](https://mongoosejs.com/docs/guides.html)
+- [Jest](https://jestjs.io/pt-BR/)
+- [Date-fns](https://date-fns.org/docs/Getting-Started)
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+- [Supertest](https://github.com/ladjs/supertest)
+- [Eslint](https://eslint.org/docs/latest/)
+- [Lodash](https://lodash.com/docs/4.17.15)
+- [Express](https://expressjs.com/en/starter/installing.html)
+
 ### Extras
 
 This area contains some extra projects that are not part of this course but are related to it.
