@@ -33,14 +33,17 @@
 ### Part 4 - Testing Express servers, user administration
 
 - [Content](https://fullstackopen.com/en/part4)
+- [Exercises](/part4/README.md)
 
 ### Part 5 - Testing React apps
 
 - [Content](https://fullstackopen.com/en/part5)
+- [Exercises](/part4/README.md)
 
 ### Part 6 - State management with Redux
 
 - [Content](https://fullstackopen.com/en/part6)
+- [Exercises](/part4/README.md)
 
 ### Part 7 - React router, custom hooks, styling app with CSS and webpack
 
@@ -70,6 +73,22 @@
 
 - [Content](https://fullstackopen.com/en/part13)
 
+## Repositories
+
+- Notes
+  - Frontend: <https://github.com/josenaldo/fso2022-notes-frontend>
+  - Backend: <https://github.com/josenaldo/fso2022-notes-backend>
+- Blog list
+  - Frontend: <https://github.com/josenaldo/fso2022-bloglist-frontend>
+  - Backend: <https://github.com/josenaldo/fso2022-bloglist-backend>
+- Phonebook
+  - Frontend: <https://github.com/josenaldo/fso2022-phonebook-frontend>
+  - Backend: <https://github.com/josenaldo/fso2022-phonebook-backend>
+- Counter
+  - Frontend: <https://github.com/josenaldo/fso2022-counter-frontend>
+- Notes Redux
+  - Frontend: <https://github.com/josenaldo/fso2022-notes-redux>
+
 ### Extras
 
 This area contains some extra projects that are not part of this course but are related to it.
@@ -81,7 +100,7 @@ This area contains some extra projects that are not part of this course but are 
 
 👤 **Josenaldo de Oliveira Matos Filho**
 
-- Website: https://livropog.com.br
+- Website: <https://livropog.com.br>
 - Twitter: [@josenaldomatos](https://twitter.com/josenaldomatos)
 - Github: [@josenaldo](https://github.com/josenaldo)
 - LinkedIn: [@josenaldo](https://linkedin.com/in/josenaldo)
