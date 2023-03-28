@@ -1,5 +1,25 @@
 # Part 5
 
+In this part of the course, we focused on frontend development and explored various aspects of React development, including testing and authentication implementation.
+
+## Login in Frontend
+
+We learned how to implement token-based authentication, which enables users to log in to our application. This authentication mechanism enhances the security of the application by ensuring that only authenticated users can access certain pages and features.
+
+## Props.Children and PropTypes
+
+We also covered the use of `props.children` and `PropTypes` to better organize our React code and ensure that components receive the expected data. These tools help us to write cleaner, more maintainable code that is less prone to errors.
+
+## Testing React Apps
+
+We explored different possibilities for testing React code, including unit testing, integration testing, and E2E testing. We learned how to use Jest and Supertest to write tests that ensure our code works as expected, and how to use these tools to improve our development process.
+
+## End-to-End Testing
+
+Finally, we looked at end-to-end testing, which involves testing the entire application from start to finish. We learned how to use tools like Cypress to write end-to-end tests that simulate user interactions with our application and ensure that all features work as intended.
+
+Overall, this part of the course gave us a solid foundation in frontend development, including testing and authentication implementation. We learned how to write cleaner, more maintainable code that is less prone to errors, and how to ensure the security and functionality of our applications.
+
 ## Notes Repository
 
 In this part, I decide to extract the notes repositories from the main repository, so I created two new repositories for this app:
