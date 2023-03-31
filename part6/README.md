@@ -26,17 +26,27 @@ Overall, this part of the course gave us a solid foundation in state management 
 
 - Counter - <https://github.com/josenaldo/fso2022-counter-frontend>
 - Notes Redux - <https://github.com/josenaldo/fso2022-notes-redux>
+- Unicafe Redux - <https://github.com/josenaldo/fso2022-unicafe-redux>
+- Anedoctes Redux - <https://github.com/josenaldo/fso2022-anedoctes-redux>
 
 ## Exercises
 
 The exercises code for this part is stored in the following repositories:
 
-- Name - URL
+- Unicafe Redux - <https://github.com/josenaldo/fso2022-unicafe-redux/>
+- Anedoctes Redux - <https://github.com/josenaldo/fso2022-anedoctes-redux>
 
 And the app is available on the following link:
 
-- URL
+- Unicafe Redux - <https://fso2022-notes-redux.vercel.app/>
 
 The final version of the app is available in the following tags:
 
-- Tag - URL
+- Exercise 6.1 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.1>
+- Exercise 6.2 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.2>
+- Exercise 6.3 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.3>
+- Exercise 6.4 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.4>
+- Exercise 6.5 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.5>
+- Exercise 6.6 - Implemented in the previous exercises
+- Exercise 6.7 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.7>
+- Exercise 6.8 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.8>

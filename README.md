@@ -96,12 +96,14 @@
 - [Vite](https://vitejs.dev/guide/)
 - [Mongoose](https://mongoosejs.com/docs/guides.html)
 - [Jest](https://jestjs.io/pt-BR/)
+- [Testing Library](https://testing-library.com/docs)
 - [Date-fns](https://date-fns.org/docs/Getting-Started)
 - [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 - [Supertest](https://github.com/ladjs/supertest)
 - [Eslint](https://eslint.org/docs/latest/)
 - [Lodash](https://lodash.com/docs/4.17.15)
 - [Express](https://expressjs.com/en/starter/installing.html)
+- [Pico Css](https://picocss.com/docs/)
 
 ### Extras
 
