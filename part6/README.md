@@ -39,14 +39,20 @@ The exercises code for this part is stored in the following repositories:
 And the app is available on the following link:
 
 - Unicafe Redux - <https://fso2022-notes-redux.vercel.app/>
+- Anedoctes Redux - <https://fso2022-anedoctes-redux.vercel.app/>
 
 The final version of the app is available in the following tags:
 
 - Exercise 6.1 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.1>
 - Exercise 6.2 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.2>
-- Exercise 6.3 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.3>
-- Exercise 6.4 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.4>
-- Exercise 6.5 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.5>
+- Exercise 6.3 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.3>
+- Exercise 6.4 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.4>
+- Exercise 6.5 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.5>
 - Exercise 6.6 - Implemented in the previous exercises
-- Exercise 6.7 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.7>
-- Exercise 6.8 - <https://github.com/josenaldo/fso2022-unicafe-redux/releases/tag/part6-ex-6.8>
+- Exercise 6.7 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.7>
+- Exercise 6.8 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.8>
+- Exercise 6.9 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.9>
+- Exercise 6.10 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.10>
+- Exercise 6.11 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.11>
+- Exercise 6.12 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.12>
+- Exercise 6.13 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.13>

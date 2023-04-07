@@ -38,12 +38,12 @@
 ### Part 5 - Testing React apps
 
 - [Content](https://fullstackopen.com/en/part5)
-- [Exercises](/part4/README.md)
+- [Exercises](/part5/README.md)
 
 ### Part 6 - State management with Redux
 
 - [Content](https://fullstackopen.com/en/part6)
-- [Exercises](/part4/README.md)
+- [Exercises](/part6/README.md)
 
 ### Part 7 - React router, custom hooks, styling app with CSS and webpack
 
