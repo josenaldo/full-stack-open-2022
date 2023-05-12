@@ -91,19 +91,22 @@
 
 ## Docs
 
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+- [Date-fns](https://date-fns.org/docs/Getting-Started)
+- [Eslint](https://eslint.org/docs/latest/)
+- [Express](https://expressjs.com/en/starter/installing.html)
+- [Jest](https://jestjs.io/pt-BR/)
+- [Json Server](https://github.com/typicode/json-server)
+- [Lodash](https://lodash.com/docs/4.17.15)
+- [Mongoose](https://mongoosejs.com/docs/guides.html)
+- [Pico Css](https://picocss.com/docs/)
 - [React](https://react.dev/learn)
 - [Redux](https://redux.js.org/introduction/getting-started)
-- [Vite](https://vitejs.dev/guide/)
-- [Mongoose](https://mongoosejs.com/docs/guides.html)
-- [Jest](https://jestjs.io/pt-BR/)
-- [Testing Library](https://testing-library.com/docs)
-- [Date-fns](https://date-fns.org/docs/Getting-Started)
-- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Supertest](https://github.com/ladjs/supertest)
-- [Eslint](https://eslint.org/docs/latest/)
-- [Lodash](https://lodash.com/docs/4.17.15)
-- [Express](https://expressjs.com/en/starter/installing.html)
-- [Pico Css](https://picocss.com/docs/)
+- [Tan Stack Query - Old React Query](https://tanstack.com/query/latest)
+- [Testing Library](https://testing-library.com/docs)
+- [Vite](https://vitejs.dev/guide/)
 
 ### Extras
 
@@ -126,7 +129,7 @@ This area contains some extra projects that are not part of this course but are 
 - [Padrões de commits](https://github.com/iuricode/padroes-de-commits/blob/main/README.md)
 - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
 - [Conventional Commits Pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
-- [Json Server](https://github.com/typicode/json-server)
+- [Open Source Awards](https://osawards.com/)
 
 ## Show your support
 

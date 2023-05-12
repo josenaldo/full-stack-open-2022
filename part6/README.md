@@ -28,6 +28,8 @@ Overall, this part of the course gave us a solid foundation in state management 
 - Notes Redux - <https://github.com/josenaldo/fso2022-notes-redux>
 - Unicafe Redux - <https://github.com/josenaldo/fso2022-unicafe-redux>
 - Anedoctes Redux - <https://github.com/josenaldo/fso2022-anedoctes-redux>
+- Notes Query - <https://github.com/josenaldo/fso2023-notes-query>
+- Anedoctes Query - <https://github.com/josenaldo/fso2023-anedoctes-query>
 
 ## Exercises
 
@@ -35,6 +37,7 @@ The exercises code for this part is stored in the following repositories:
 
 - Unicafe Redux - <https://github.com/josenaldo/fso2022-unicafe-redux/>
 - Anedoctes Redux - <https://github.com/josenaldo/fso2022-anedoctes-redux>
+- Anedoctes Query - <https://github.com/josenaldo/fso2023-anedoctes-query>
 
 And the app is available on the following link:
 
@@ -56,3 +59,10 @@ The final version of the app is available in the following tags:
 - Exercise 6.11 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.11>
 - Exercise 6.12 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.12>
 - Exercise 6.13 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.13>
+- Exercise 6.14 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.14>
+- Exercise 6.15 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.15>
+- Exercise 6.16 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.16>
+- Exercise 6.17 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.17>
+- Exercise 6.18 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.18>
+- Exercise 6.19 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.19>
+- Exercise 6.20 - <https://github.com/josenaldo/fso2023-anedoctes-query/releases/tag/part6-ex-6.20>
