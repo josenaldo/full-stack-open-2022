@@ -66,3 +66,4 @@ The final version of the app is available in the following tags:
 - Exercise 6.18 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.18>
 - Exercise 6.19 - <https://github.com/josenaldo/fso2022-anedoctes-redux/releases/tag/part6-ex-6.19>
 - Exercise 6.20 - <https://github.com/josenaldo/fso2023-anedoctes-query/releases/tag/part6-ex-6.20>
+- Exercise 6.21 - <https://github.com/josenaldo/fso2023-anedoctes-query/releases/tag/part6-ex-6.21>

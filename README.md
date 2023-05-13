@@ -108,12 +108,20 @@
 - [Testing Library](https://testing-library.com/docs)
 - [Vite](https://vitejs.dev/guide/)
 
+### Deploy
+
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [Fly.io](https://fly.io/app/sign-in)
+- [Vercel](https://vercel.com/dashboard)
+- [Github pages](https://pages.github.com/)
+
 ### Extras
 
 This area contains some extra projects that are not part of this course but are related to it.
 
 - [this](/extras/this/) - A simple example of how `this` works in JavaScript.
 - [function-return-function](/extras/function-return-function/) - A simple example of how to implement a per-object event handler, using a function that returns another function.
+- [OS Awards](https://osawards.com/) - A website that lists the best open source projects.
 
 ## Author
 
