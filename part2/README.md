@@ -1,4 +1,10 @@
-# Part 2 Exercises
+# Part 2 - Communicating with server
+
+<https://fullstackopen.com/en/part2>
+
+In this part of course...
+
+## Exercises
 
 - Course Info
   - 2.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part2-ex-2.1>

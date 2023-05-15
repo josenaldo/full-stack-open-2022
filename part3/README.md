@@ -1,4 +1,10 @@
-# Part 3 Exercises
+# Part 3 - Programming a server with NodeJS and Express
+
+<https://fullstackopen.com/en/part3>
+
+In this part of course...
+
+## Exercises
 
 As requested by the exercises, two new repositories were created for this app:
 

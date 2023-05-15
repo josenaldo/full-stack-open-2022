@@ -1,5 +1,7 @@
 # Part 6 - Advanced state management
 
+<https://fullstackopen.com/en/part6>
+
 In this part of the course, we learned about state management in larger React applications. We discovered that placing the application's state and state logic directly inside React components can become unwieldy as the application grows larger. To address this issue, we introduced the Redux library, which is currently the most popular solution for managing the state of React applications.
 
 ## Topics

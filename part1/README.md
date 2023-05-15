@@ -1,4 +1,10 @@
-# Part 1 Exercises
+# Part 1 - Introduction to React
+
+<https://fullstackopen.com/en/part1>
+
+In this part of course...
+
+## Exercises
 
 - Course Info
   - 1.1 - <https://github.com/josenaldo/full-stack-open-2022/releases/tag/part1-ex-1.1>

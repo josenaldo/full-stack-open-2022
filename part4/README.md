@@ -1,4 +1,10 @@
-# Part 4 Exercises
+# Part 4 - Testing Express servers, user administration
+
+<https://fullstackopen.com/en/part4>
+
+In this part of course...
+
+## Exercises
 
 As requested by the exercise, a new repository was created for this app: <https://github.com/josenaldo/fso2022-bloglist-backend>
 

@@ -48,6 +48,7 @@
 ### Part 7 - React router, custom hooks, styling app with CSS and webpack
 
 - [Content](https://fullstackopen.com/en/part7)
+- [Exercises](/part7/README.md)
 
 ### Part 8 - GraphQL
 
