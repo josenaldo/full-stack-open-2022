@@ -53,26 +53,32 @@
 ### Part 8 - GraphQL
 
 - [Content](https://fullstackopen.com/en/part8)
+- [Exercises](/part8/README.md)
 
 ### Part 9 - TypeScript
 
 - [Content](https://fullstackopen.com/en/part9)
+- [Exercises](/part9/README.md)
 
 ### Part 10 - React Native
 
 - [Content](https://fullstackopen.com/en/part10)
+- [Exercises](/part10/README.md)
 
 ### Part 11 - CI/CD
 
 - [Content](https://fullstackopen.com/en/part11)
+- [Exercises](/part11/README.md)
 
 ### Part 12 - Containers
 
 - [Content](https://fullstackopen.com/en/part12)
+- [Exercises](/part12/README.md)
 
 ### Part 13 - Using relational databases
 
 - [Content](https://fullstackopen.com/en/part13)
+- [Exercises](/part13/README.md)
 
 ## Repositories
 
