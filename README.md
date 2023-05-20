@@ -145,6 +145,7 @@ This area contains some extra projects that are not part of this course but are 
 - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
 - [Conventional Commits Pattern](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657)
 - [Open Source Awards](https://osawards.com/)
+- [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 
 ## Show your support
 
