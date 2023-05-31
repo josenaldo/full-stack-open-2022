@@ -85,7 +85,10 @@
 - Notes
   - Frontend: <https://github.com/josenaldo/fso2022-notes-frontend>
   - Backend: <https://github.com/josenaldo/fso2022-notes-backend>
-- Blog list
+  - Router: <https://github.com/josenaldo/fso2023-notes-router>
+  - Router Bootstrap: <https://github.com/josenaldo/fso2023-notes-router-bootstrap>
+  - Router Mui: <https://github.com/josenaldo/fso2023-notes-router-mui>
+- Blog List
   - Frontend: <https://github.com/josenaldo/fso2022-bloglist-frontend>
   - Backend: <https://github.com/josenaldo/fso2022-bloglist-backend>
 - Phonebook
@@ -95,6 +98,11 @@
   - Frontend: <https://github.com/josenaldo/fso2022-counter-frontend>
 - Notes Redux
   - Frontend: <https://github.com/josenaldo/fso2022-notes-redux>
+
+## Exercises Reporitories
+
+- Country Hook: <https://github.com/josenaldo/fso2023-country-hook>
+- Ultimate Hooks: <https://github.com/josenaldo/fso2023-ultimate-hooks>
 
 ## Docs
 

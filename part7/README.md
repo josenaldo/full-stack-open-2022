@@ -11,6 +11,11 @@ In this part of course...
 - Anecdotes Routed <https://github.com/josenaldo/fso2023-anecdotes-routed>
 - Country Hook - <https://github.com/josenaldo/fso2023-country-hook>
 - Ultimate Hook - <https://github.com/josenaldo/fso2023-ultimate-hooks>
+- Webpack Part7 - <https://github.com/josenaldo/fso1023-webpack-part7>
+- Anecdotes Classes - <https://github.com/josenaldo/fso2023-anedoctes-classes>
+- Bloglist P7 Redux
+  - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7>
+  - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7>
 
 ## Exercises
 
@@ -22,5 +27,21 @@ In this part of course...
 - Exercise 7.6 - <https://github.com/josenaldo/fso2023-anecdotes-routed/releases/tag/part7-ex-7.6>
 - Exercise 7.7 - <https://github.com/josenaldo/fso2023-country-hook/releases/tag/part7-ex-7.7>
 - Exercise 7.8 - <https://github.com/josenaldo/fso2023-ultimate-hooks/releases/tag/part7-ex-7.8>
+- Blog List P7 Redux
+  - Exercise 7.9
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.9>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.9>
+  - Exercise 7.10
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.10>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.10>
+  - Exercise 7.11
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.11>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.11>
+  - Exercise 7.12
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.12>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.12>
+  - Exercise 7.13
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.13>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.13>
 
 ## Extra notes
