@@ -13,12 +13,12 @@ In this part of course...
 - Ultimate Hook - <https://github.com/josenaldo/fso2023-ultimate-hooks>
 - Webpack Part7 - <https://github.com/josenaldo/fso1023-webpack-part7>
 - Anecdotes Classes - <https://github.com/josenaldo/fso2023-anedoctes-classes>
-- Bloglist P7 Redux
+- Bloglist P7
   - Frontend Redux - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7>
   - Frontend React QUery - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7-context>
   - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7>
 
-## Exercises
+## Exercisesput_your_reposity_name_here
 
 - Exercise 7.1 - <https://github.com/josenaldo/fso2023-anecdotes-routed/releases/tag/part7-ex-7.1>
 - Exercise 7.2 - <https://github.com/josenaldo/fso2023-anecdotes-routed/releases/tag/part7-ex-7.2>
