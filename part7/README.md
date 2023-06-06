@@ -14,7 +14,8 @@ In this part of course...
 - Webpack Part7 - <https://github.com/josenaldo/fso1023-webpack-part7>
 - Anecdotes Classes - <https://github.com/josenaldo/fso2023-anedoctes-classes>
 - Bloglist P7 Redux
-  - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7>
+  - Frontend Redux - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7>
+  - Frontend React QUery - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7-context>
   - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7>
 
 ## Exercises
@@ -43,5 +44,34 @@ In this part of course...
   - Exercise 7.13
     - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.13>
     - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.13>
+  - Exercise 7.14
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.14>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.14>
+  - Exercise 7.15
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.15>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.15>
+  - Exercise 7.16
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.16>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.16>
+  - Exercise 7.17
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.17>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.17>
+  - Exercise 7.18
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.18>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.18>
+  - Exercise 7.19
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.19>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.19>
+  - Exercise 7.20
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.20>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.20>
+  - Exercise 7.21
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7/releases/tag/part7-ex-7.21>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.21>
+
+- Blog List P7 React Query
+  - Exercise 7.21
+    - Frontend - <https://github.com/josenaldo/fso2023-bloglist-frontend-p7-context/releases/tag/part7-ex-7.21>
+    - Backend - <https://github.com/josenaldo/fso2023-bloglist-backend-p7/releases/tag/part7-ex-7.21>
 
 ## Extra notes
